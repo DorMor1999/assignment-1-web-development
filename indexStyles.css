@@ -1,0 +1,72 @@
+/* Reset default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+main {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/*head*/
+
+header {
+  background-color: #0275d8;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/*list*/
+
+/* Styling for the unordered list */
+ul {
+  list-style-type: none;
+}
+
+/* Styling for list items */
+li {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+li:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+/* map */
+
+.map {
+  margin-top: 3%;
+}
+
+.world-map-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
