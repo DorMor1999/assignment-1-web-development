@@ -1,74 +1,98 @@
 /* Reset default browser styles */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
 }
 
-main{
-    margin-top: 2.5%;
-    margin-left: 15%;
-    margin-right: 15%;
+main {
+  margin-top: 2.5%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 /*head*/
 
 header {
-    background-color: #0275d8;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  background-color: #0275d8;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
 header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
 /*link*/
 
-.back-link-div{
-    margin-bottom: 2.5%;
-    text-align: center; /* Centers the content horizontally */
-}
+/* CSS for screens smaller than 500 pixels wide */
+@media only screen and (max-width: 500px) {
+    .back-link-div {
+      margin-top: 8%;
+      margin-bottom: 8%;
+      text-align: center; /* Centers the content horizontally */
+    }
+  }
+  
+  /* CSS for screens between 501 and 900 pixels wide */
+  @media only screen and (min-width: 501px) and (max-width: 900px) {
+    .back-link-div {
+      margin-top: 5%;
+      margin-bottom: 5%;
+      text-align: center; /* Centers the content horizontally */
+    }
+  }
+  
+  /* CSS for screens larger than 900 pixels wide */
+  @media only screen and (min-width: 901px) {
+    .back-link-div {
+      margin-bottom: 2.5%;
+      text-align: center; /* Centers the content horizontally */
+    }
+  }
 
-.link{
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 50px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.link {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .link:hover {
-    background-color: #f0f0f0;
-    transition: background-color 0.3s ease;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
 }
 
 /* paragraph*/
-p{
-    margin-bottom: 2.5%;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 50px;
+p {
+  margin-bottom: 3.5%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 50px;
 }
 
 /*imges*/
 .image-container {
-    text-align: center; /* Centers the content horizontally */
-    margin-bottom: 2%;
+  text-align: center; /* Centers the content horizontally */
+  margin-bottom: 2%;
 }
 
 .image-container img {
-    display: inline-block; /* Ensures the image is treated as a block element */
-    max-width: 100%; /* Ensures the image doesn't exceed its container's width */
-    height: auto; /* Maintains the image's aspect ratio */
-    width: 60%;
+  display: inline-block; /* Ensures the image is treated as a block element */
+  max-width: 100%; /* Ensures the image doesn't exceed its container's width */
+  height: auto; /* Maintains the image's aspect ratio */
+  width: 100%;
 }
-
-
-
